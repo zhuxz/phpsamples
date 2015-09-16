@@ -37,7 +37,7 @@
           <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
         </a>
         <ul class="am-dropdown-content">
-          <li><a href="javascript:void(0);" id="source" data-am-modal="{target: '#your-modal'}"><span class="am-icon-user"></span> 资料</a></li>
+          <li><a href="javascript:void(0);" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 400, height: 225}"><span class="am-icon-user"></span> 资料</a></li>
           <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
           <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
         </ul>
@@ -47,14 +47,14 @@
   </div>
 </header>
 
-<div class="am-modal am-modal-no-btn" tabindex="-1" id="your-modal">
+<div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
   <div class="am-modal-dialog">
-	<div class="am-modal-hd">Modal 标题
-	  <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
-	</div>
-	<div class="am-modal-bd">
-	  Modal 内容。
-	</div>
+    <div class="am-modal-hd">Modal 标题
+      <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+    </div>
+    <div class="am-modal-bd">
+      Modal 内容。本 Modal 无法通过遮罩层关闭。
+    </div>
   </div>
 </div>
 
