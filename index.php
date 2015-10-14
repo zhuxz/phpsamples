@@ -24,12 +24,13 @@
 <header class="am-topbar admin-header">
   <div class="am-topbar-brand">
     <strong>Amaze UI</strong> <small>后台管理模板</small>
+
+    <a href="javascript:void(0);" onclick="ShowUserSourceWin(this);" id="">Modal</a>
   </div>
 
   <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
 
   <div class="am-collapse am-topbar-collapse" id="topbar-collapse">
-
     <ul class="am-nav am-nav-pills am-topbar-nav am-topbar-right admin-header-list">
       <li><a href="javascript:;"><span class="am-icon-envelope-o"></span> 收件箱 <span class="am-badge am-badge-warning">5</span></a></li>
       <li class="am-dropdown" data-am-dropdown>
@@ -37,7 +38,8 @@
           <span class="am-icon-users"></span> 管理员 <span class="am-icon-caret-down"></span>
         </a>
         <ul class="am-dropdown-content">
-          <li><a href="javascript:void(0);" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 400, height: 225}"><span class="am-icon-user"></span> 资料</a></li>
+          <li><a href="javascript:void(0);" id="modelframe" onclick="ShowUserSourceWin(this);"><span class="am-icon-user"></span> 资料</a></li>
+          <!--data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0, width: 400, height: 225}"-->
           <li><a href="#"><span class="am-icon-cog"></span> 设置</a></li>
           <li><a href="#"><span class="am-icon-power-off"></span> 退出</a></li>
         </ul>
@@ -49,7 +51,7 @@
 
 <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
   <div class="am-modal-dialog">
-    <div class="am-modal-hd">Modal 标题
+    <div class="am-modal-hd">过滤条件
       <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
     </div>
     <div class="am-modal-bd">
